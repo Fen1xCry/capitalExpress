@@ -1,0 +1,58 @@
+<section class="tabs_2">
+  <div class="container">
+    <div class="wrap">
+      <div class="col xl12">
+        <h2>Используем запчасти высшего качества</h2>
+      </div>
+    </div>
+    <div class="wrap tabs_2__stretch">
+      <div class="col xl4 tabs_2__idx">
+        <button class="tablinks" onclick="openKids(event, 'tabs2i1')" id="defaultOpen"><span>Дисплей</span></button>
+        <button class="tablinks" onclick="openKids(event, 'tabs2i2')"><span>Защита от брака</span></button>
+        <button class="tablinks" onclick="openKids(event, 'tabs2i3')"><span>Шлейфы и кнопки</span></button>
+        <button class="tablinks" onclick="openKids(event, 'tabs2i4')"><span>Аккумуляторы</span></button>
+      </div>
+
+      <div class="col xl8 m12 tabs_2__result">
+
+        <div id="tabs2i1" class="tabs_2__result__list">
+          <div class="wrap">
+            <div class="col xl4 pictures">
+              <img src="/img/test_pic.svg" alt="">
+            </div>
+            <div class="col xl8 item_text">
+              <p>От производителей с оригинальными чипами, которые дают гарантию полгода на свою продукцию. Каждый аккумулятор обеспечивает более 1000 циклов заряда/разряда токами различной величины и проходит тесты на работу под нагрузкой, эксплуатацию на морозе и сопротивление деформации. Дополнительный контроль показывает, что номинальная емкость этих аккумуляторов в среднем на 5% больше, чем у оригинальных от Apple.</p>
+            </div>
+          </div>
+        </div>
+        <div id="tabs2i2" class="tabs_2__result__list">
+        </div>
+        <div id="tabs2i3" class="tabs_2__result__list">
+        </div>
+        <div id="tabs2i4" class="tabs_2__result__list">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function openKids(evt, openKids) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabs_2__result__list");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(openKids).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>

@@ -1,0 +1,88 @@
+
+img
+  display: block
+  max-width: 100%
+  width: auto
+  margin: .5rem auto
+div
+  box-sizing: border-box
+
+details
+  summary
+    display: block
+
+    &::-webkit-details-marker
+      display: none
+
+    &::before
+      content: "+ "
+
+  &[open] summary::before
+    content: "- "
+h1
+  font-size: 36px
+  font-size: 2.25rem
+  line-height: 1.75
+  font-weight: 600
+  @media (max-width: 960px)
+    font-size: calc( 2.48rem / 1.5 )
+h2
+  font-size: 33.18px
+  font-size: 2.074rem
+  line-height: 1.75
+h3
+  font-size: 33.18px
+  font-size: 2.074rem
+  line-height: 1.75
+  // font-size: 27.65px
+  // font-size: 1.728rem
+  // line-height: 1.75
+h4
+  font-size: 23.04px
+  font-size: 1.44rem
+  line-height: 1.33
+h5
+  font-size: 13.33px
+  font-size: 0.833rem
+
+a.link
+  text-decoration: none
+  text-transform: uppercase
+  color: #292929
+  background: #fafafa
+  &:hover
+    background: #3030302d
+.cart-container
+  .fix 
+    width: 0 !important
+    height: 0 !important
+    display: none !important
+  .items__block__title
+    background: #f3f3f3
+    color: #000
+    min-height: 2.5rem
+p
+  line-height: 1.33
+
+a
+  &:hover
+    color: #00EB2B !important
+.content-full
+  display: flex
+  flex-wrap: wrap
+.btn
+  background: #383838
+  color: #fff
+  padding: 1rem 2rem
+  text-decoration: none
+.title
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-bottom: 3rem !important
+  h3
+    font:
+      size: 1.25rem
+      weight: 600
+    color: #006a28
+  h2

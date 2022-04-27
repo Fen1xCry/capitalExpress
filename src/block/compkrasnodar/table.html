@@ -1,0 +1,184 @@
+<section class="table">
+  <div class="container">
+    <div class="wrap">
+      <div class="col xl12">
+        <h2>Стоимость ремонта</h2>
+      </div>
+      <div class="col xl12 table__descriptions">
+        <p>Приведенные ниже расценки на типовой ремонт включают в себя работу и все необходимые материалы. Цена «под ключ»</p>
+      </div>
+          <div class="col xl12 m3 table__idx">
+            <button class="tablinks tablinks_1" onclick="openKids(event, 'tabs1i1')" id="defaultOpen1"><span>Модель 1</span></button>
+            <button class="tablinks tablinks_1" onclick="openKids(event, 'tabs1i2')"><span>Модель 2</span></button>
+            <button class="tablinks tablinks_1" onclick="openKids(event, 'tabs1i3')"><span>Модель 3</span></button>
+          </div>
+    
+          <div class="col xl12 m9 table__result">
+            <div id="tabs1i1" class="table__result__list">
+              <div class="box">
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+              </div>
+    
+            </div>
+            <div id="tabs1i2" class="table__result__list">
+              <div class="box">
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+              </div>
+            </div>
+            <div id="tabs1i3" class="table__result__list">
+              <div class="box">
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+      
+                <div class="list__item">
+                  <span>Позиция 1</span>
+                  <span>1000 рублей</span>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+
+      
+    </div>
+  </div>
+</section>
+<script>
+  function openKids(evt, openKids) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("table__result__list");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks_1");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(openKids).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen1").click();
+</script>
